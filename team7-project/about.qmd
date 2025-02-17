@@ -1,3 +1,15 @@
 ---
 title: "About"
 ---
+**Most in-demand Skills for Data science, Business Analytics, and ML Roles**
+ Based on the study analyzing 786 job postings, the most in-demand skills for Data Science, Business Analytics, and Machine Learning roles can be categorized into technical skills, analytical skills, and soft skills. The study highlights that Excel (84%), Tableau (71%), SPSS (70%), Python (70%), and SQL (68%) are among the most frequently required tools, emphasizing the importance of data manipulation, analysis, and visualization. Additionally, Power BI (61%) and R (67%) remain valuable for business analytics and statistical modeling.
+Analytical skills such as data visualization (91%), data cleaning (88%), and data extraction (78%) are critical, demonstrating the need for professionals who can preprocess and interpret data effectively. Employers also seek candidates with experience in script programming (41%) and neural networks (18%), particularly for advanced machine learning roles.
+Beyond technical expertise, soft skills like communication (100%), problem-solving (92%), teamwork (91%), and presentation abilities (79%) are equally vital. These skills help professionals convey insights to stakeholders and collaborate effectively. For business analysts, strong Excel, SQL, and storytelling skills are crucial, while data scientists and ML engineers require deep expertise in statistics, Python, and predictive modeling. The findings reinforce that a blend of technical proficiency and interpersonal skills is essential for career success.
+
+**Job Descriptions Evolved in 2024 to Require AI/ML Expertise**
+Job descriptions in 2024 have evolved significantly to incorporate AI/ML expertise, reflecting the increasing integration of artificial intelligence in recruitment and workforce management. Companies are now utilizing AI-based recommender systems to match employee profiles with job roles, reducing human bias and improving efficiency in hiring and talent management.
+A key trend in job descriptions is the greater emphasis on AI and ML proficiency. Even for roles outside traditional tech fields, employers are prioritizing candidates with automation, predictive analytics, and AI-enhanced decision-making skills. Many organizations expect job applicants to have at least a foundational understanding of machine learning tools, data analysis, and cloud-based AI solutions.
+Another major shift is the use of AI-driven profile matching, where machine learning models assess historical performance, skills, and industry trends to suggest job candidates. AI is also helping reduce human bias in hiring by offering objective, data-driven recommendations. However, challenges remain, such as algorithmic fairness and ethical concerns in AI-driven recruitment.
+Additionally, job descriptions have become more personalized and dynamic, as AI enables real-time role adjustments based on employee potential and company needs. Overall, AI and ML expertise are now essential components of modern job descriptions, reflecting the digital transformation across industries.
+
+
