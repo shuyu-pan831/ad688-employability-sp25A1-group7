@@ -9,6 +9,7 @@ website:
         text: Introduction & Research Rationale
       - about.qmd
       - eda.qmd
+      - dashboard.qmd
       - career_plan.qmd
 
 format:

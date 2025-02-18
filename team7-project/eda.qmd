@@ -98,3 +98,6 @@ analytics_jobs %>%
     legend.position = "none")
 ggsave("/home/ubuntu/ad688-employability-sp25A1-group7/figures/Top10_InDemand_Skills_for_Analytics_Jobs.png", width = 18, height = 8, dpi = 300)
 ```
+
+
+

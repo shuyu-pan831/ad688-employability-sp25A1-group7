@@ -1,0 +1,67 @@
+---
+title: "Data & Analytics Job Market Dashboard"
+format: html
+execute:
+  freeze: auto
+engine: python
+---
+
+```{python}
+import pandas as pd
+import plotly.express as px
+import dash
+from dash import dcc, html
+from dash.dependencies import Input, Output
+
+# Load the dataset
+file_path = '/home/ubuntu/ad688-employability-sp25A1-group7/data/analytics_jobs.csv'
+data = pd.read_csv(file_path)
+
+# Drop missing values in salary column
+data = data.dropna(subset=['salary'])
+data['salary'] = pd.to_numeric(data['salary'], errors='coerce')
+data = data.dropna(subset=['salary'])
+
+# Explode skills (assuming comma-separated values)
+data['skills'] = data['skills'].fillna('')
+skills_exploded = data.assign(skills=data['skills'].str.split(',')).explode('skills')
+skills_count = skills_exploded['skills'].value_counts().nlargest(10)
+
+# Dash App Initialization
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+    html.H1("Analytics Job Market Dashboard", style={'textAlign': 'center'}),
+    
+    dcc.Graph(
+        id='salary-histogram',
+        figure=px.histogram(data, x='salary', nbins=20, title='Salary Distribution of Data & Analytics Jobs',
+                            labels={'salary': 'Salary (USD)'},
+                            template='plotly_white')
+    ),
+    
+    dcc.Graph(
+        id='job-title-bar',
+        figure=px.bar(data['job_title'].value_counts().nlargest(10),
+                      x=data['job_title'].value_counts().nlargest(10).index,
+                      y=data['job_title'].value_counts().nlargest(10).values,
+                      title='Top 10 Most Common Job Titles',
+                      labels={'x': 'Job Title', 'y': 'Count'},
+                      template='plotly_white').update_layout(xaxis={'categoryorder':'total descending'})
+    ),
+    
+    dcc.Graph(
+        id='skills-bar',
+        figure=px.bar(skills_count,
+                      x=skills_count.index,
+                      y=skills_count.values,
+                      title='Top 10 In-Demand Skills for Analytics Jobs',
+                      labels={'x': 'Skill', 'y': 'Count'},
+                      template='plotly_white').update_layout(xaxis={'categoryorder':'total descending'})
+    )
+])
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
+
+```
