@@ -23,7 +23,7 @@ In our analysis of Business Analytics, Data Science, and Machine Learning Trends
 for decision-making across industries. Emerging technologies like Generative AI, AutoML, and Edge AI are gaining widespread adoption, making AI more accessible and efficient.
  Additionally, there is a growing focus on Ethical AI and Explainability, as businesses seek to mitigate bias and ensure fairness in machine learning models. The job market is 
  also shifting, with increasing demand for professionals skilled in AI, Python, and data analytics. Furthermore, businesses are transitioning from traditional analytics to AI-powered
- Business Intelligence, improving efficiency, personalization, and customer experience. O
+ Business Intelligence, improving efficiency, personalization, and customer experience. 
 ---
 
 # Research & Literature Review
